@@ -30,8 +30,7 @@ def load_and_prepare_data(file_path='/home/cloud/Desktop/ML Assignment 2/data/St
     possible_paths = [
         file_path,
         'data/Student_Performance_data.csv',
-        '../data/Student_Performance_data.csv',
-        '/home/cloud/Desktop/ML Assignment 2/data/Student_performance_data.csv'
+        '../data/Student_Performance_data.csv'
     ]
     
     df = None
