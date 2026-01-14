@@ -7,12 +7,12 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from .XGBoost_Classifier import train_xgboost
-from .Random_Forest_Classifier import train_random_forest
-from .logistic_regression import train_logistic_regression
-from .Decision_Tree_Classifier import train_decision_tree
-from .KNeighbors_Classifier  import train_knn
-from .Naive_Bayes_Classifier import train_naive_bayes
+from XGBoost_Classifier import train_xgboost
+from Random_Forest_Classifier import train_random_forest
+from logistic_regression import train_logistic_regression
+from Decision_Tree_Classifier import train_decision_tree
+from KNeighbors_Classifier  import train_knn
+from Naive_Bayes_Classifier import train_naive_bayes
 import joblib
 import os
 
