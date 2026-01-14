@@ -1381,7 +1381,7 @@ def main():
                     return
                 
                 # Scale features if needed
-                models_requiring_scaling = ['logistic_regression', 'knn', 'naive_bayes']
+                models_requiring_scaling = ['logistic_regression', 'knn', 'naive_bayes','decision_tree','random_forest','xgboost']
                 if selected_model_key in models_requiring_scaling:
                     if scaler is None:
                         st.error("❌ Scaler not found!")
