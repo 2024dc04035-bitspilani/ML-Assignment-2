@@ -87,7 +87,7 @@ def main():
     lr_model, lr_metrics = train_logistic_regression(X_train_scaled, X_test_scaled, y_train, y_test)
     results['Logistic Regression'] = lr_metrics
     
-    dt_model, dt_metrics = train_decision_tree(X_train_scaled, X_test_scaled, y_train, y_test)
+    dt_model, dt_metrics = train_decision_tree(X_train, X_test, y_train, y_test)
     results['Decision Tree'] = dt_metrics
     
     knn_model, knn_metrics = train_knn(X_train_scaled, X_test_scaled, y_train, y_test)
@@ -96,10 +96,10 @@ def main():
     nb_model, nb_metrics = train_naive_bayes(X_train_scaled, X_test_scaled, y_train, y_test)
     results['Naive Bayes'] = nb_metrics
     
-    rf_model, rf_metrics = train_random_forest(X_train_scaled, X_test_scaled, y_train, y_test)
+    rf_model, rf_metrics = train_random_forest(X_train, X_test, y_train, y_test)
     results['Random Forest'] = rf_metrics
     
-    xgb_model, xgb_metrics = train_xgboost(X_train_scaled, X_test_scaled, y_train, y_test)
+    xgb_model, xgb_metrics = train_xgboost(X_train, X_test, y_train, y_test)
     results['XGBoost'] = xgb_metrics
     
     # Save results to Excel

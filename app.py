@@ -1196,7 +1196,7 @@ def load_model(model_name):
         f'saved_models/{model_name}.pkl',
         os.path.join(os.path.dirname(__file__), 'saved_models', f'{model_name}.pkl')
     ]
-    print(possible_paths)
+
     for model_path in possible_paths:
         if os.path.exists(model_path):
             return joblib.load(model_path)
@@ -1381,7 +1381,7 @@ def main():
                     return
                 
                 # Scale features if needed
-                models_requiring_scaling = ['logistic_regression', 'knn', 'naive_bayes','decision_tree','random_forest','xgboost']
+                models_requiring_scaling = ['logistic_regression', 'knn', 'naive_bayes']
                 if selected_model_key in models_requiring_scaling:
                     if scaler is None:
                         st.error("❌ Scaler not found!")
