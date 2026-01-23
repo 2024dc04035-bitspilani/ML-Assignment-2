@@ -1272,7 +1272,7 @@ def main():
     
     # Enhanced Header with gradient
     st.markdown('<h1 class="main-header">🎓 ML Classification Models Evaluation</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="sub-header">BITS Pilani | M.Tech (AIML/DSE) | Machine Learning Assignment 2</p>', unsafe_allow_html=True)
+    st.markdown('<p class="sub-header">BITS Pilani | M.Tech (DSE) | Machine Learning Assignment 2</p>', unsafe_allow_html=True)
     st.markdown("---")
     
     # Sidebar with enhanced styling
@@ -1491,7 +1491,7 @@ def main():
         **About This Application**
         
         This application demonstrates the evaluation of multiple machine learning classification models 
-        for student performance prediction. Built as part of **BITS Pilani M.Tech (AIML/DSE) 
+        for student performance prediction. Built as part of **BITS Pilani M.Tech (DSE) 
         Machine Learning Assignment 2**.
         """)
         
@@ -1621,7 +1621,7 @@ def main():
         st.markdown("""
         <div style="text-align: center; color: #6c757d; padding: 2rem;">
         <p><strong>BITS Pilani</strong> | Work Integrated Learning Programmes Division</p>
-        <p>M.Tech (AIML/DSE) | Machine Learning Assignment 2</p>
+        <p>M.Tech (DSE) | Machine Learning Assignment 2</p>
         <p style="font-size: 0.9rem;">Built with ❤️ using Streamlit</p>
         </div>
         """, unsafe_allow_html=True)
