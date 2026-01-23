@@ -102,7 +102,7 @@ def main():
     rf_model, rf_metrics = train_random_forest(X_train_scaled, X_test_scaled, y_train, y_test)
     results['Random Forest'] = rf_metrics
     
-    xgb_model, xgb_metrics = train_xgboost(X_train_scaled, X_test_scaled, y_train, y_test)
+    xgb_model, xgb_metrics = train_xgboost(X_train, X_test, y_train, y_test)
     results['XGBoost'] = xgb_metrics
     
     # Save results to Excel
