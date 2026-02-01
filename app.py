@@ -1508,7 +1508,7 @@ def main():
                 st.markdown("""
                 ### 📋 Step-by-Step Instructions:
                 1. **Select Model**: Choose a model from the dropdown in the sidebar
-                2. **Test Dataset Downlaod & sUpload Dataset**: Click "Browse files" and select your test CSV file after downloading the test data by clicking "Download" button under "Download Test Data" section.
+                2. **Test Dataset Downlaod & Upload Dataset**: Click "Browse files" and select your test CSV file after downloading the test data by clicking "Download" button under "Download Test Data" section.
                 3. **View Results**: See evaluation metrics, confusion matrix, and classification report
                 
                 ### ✅ Dataset Requirements:
