@@ -1300,7 +1300,7 @@ def main():
     """Main Streamlit application"""
     
     # Enhanced Header with gradient
-    st.markdown('<h1 class="main-header">🎓 ML Classification Models Evaluation</h1>', unsafe_allow_html=True)
+    st.markdown('<p class="main-header">🎓 ML Classification Models Evaluation</p>', unsafe_allow_html=True)
     st.markdown('<p class="sub-header">BITS Pilani | M.Tech (DSE) | Machine Learning Assignment 2</p>', unsafe_allow_html=True)
     st.markdown("---")
     
