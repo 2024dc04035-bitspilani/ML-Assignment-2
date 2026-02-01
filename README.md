@@ -101,7 +101,9 @@ ML-Assignment-2/
 ├── data/
 │   ├── __pycache__/                    # Python cache (auto-generated)
 │   ├── Student_performance_data.csv    # Student performance dataset
-│   └── validate_dataset.py             # Dataset validation script
+│   ├── validate_dataset.py             # Dataset validation script
+│   └── test/
+│       └── test_data.csv               # Sample test dataset for model evaluation
 │
 ├── models/                              # Model training scripts
 │   ├── __pycache__/                    # Python cache (auto-generated)
@@ -167,10 +169,11 @@ ML-Assignment-2/
 The Streamlit application includes the following features:
 
 1. **Dataset Upload**: Users can upload CSV files containing test data for evaluation
-2. **Model Selection**: Dropdown menu to select from 6 different classification models
-3. **Evaluation Metrics Display**: Shows all 6 metrics (Accuracy, AUC, Precision, Recall, F1, MCC)
-4. **Confusion Matrix**: Visual representation of model predictions
-5. **Classification Report**: Detailed per-class metrics
+2. **Sample Data Download**: Download button to get the sample test dataset (`data/test/test_data.csv`)
+3. **Model Selection**: Dropdown menu to select from 6 different classification models
+4. **Evaluation Metrics Display**: Shows all 6 metrics (Accuracy, AUC, Precision, Recall, F1, MCC)
+5. **Confusion Matrix**: Visual representation of model predictions
+6. **Classification Report**: Detailed per-class metrics
 
 ## Deployment on Streamlit Community Cloud
 
