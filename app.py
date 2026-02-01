@@ -1360,7 +1360,7 @@ def main():
                 with open(sample_data_path, 'rb') as f:
                     sample_data = f.read()
                 st.download_button(
-                    label="📥 Download Test Data",
+                    label="📥 Download",
                     data=sample_data,
                     file_name="test_data.csv",
                     mime="text/csv",
