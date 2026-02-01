@@ -1350,7 +1350,6 @@ def main():
                 )
             
             st.markdown("---")
-            st.markdown("### 📥 Download Sample Data")
             # Download button for sample test data
             sample_data_path = os.path.join(os.path.dirname(__file__), 'data', 'test', 'test_data.csv')
             if not os.path.exists(sample_data_path):
