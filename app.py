@@ -1186,6 +1186,35 @@ st.markdown("""
         fill: #000000 !important;
         color: #000000 !important;
     }
+    
+    /* Download button styling - white text */
+    [data-testid="stDownloadButton"] button {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 8px !important;
+        padding: 0.75rem 1.5rem !important;
+        font-weight: 600 !important;
+        box-shadow: 0 4px 6px rgba(102, 126, 234, 0.3) !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    [data-testid="stDownloadButton"] button:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4) !important;
+    }
+    
+    [data-testid="stDownloadButton"] button span,
+    [data-testid="stDownloadButton"] button p,
+    [data-testid="stDownloadButton"] button div,
+    [data-testid="stDownloadButton"] button * {
+        color: #ffffff !important;
+    }
+    
+    [data-testid="stDownloadButton"] button svg {
+        fill: #ffffff !important;
+        color: #ffffff !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -1319,6 +1348,26 @@ def main():
                     f'</div>', 
                     unsafe_allow_html=True
                 )
+            
+            st.markdown("---")
+            st.markdown("### 📥 Download Sample Data")
+            # Download button for sample test data
+            sample_data_path = os.path.join(os.path.dirname(__file__), 'data', 'test', 'test_data.csv')
+            if not os.path.exists(sample_data_path):
+                sample_data_path = 'data/test/test_data.csv'
+            
+            if os.path.exists(sample_data_path):
+                with open(sample_data_path, 'rb') as f:
+                    sample_data = f.read()
+                st.download_button(
+                    label="📥 Download Test Data",
+                    data=sample_data,
+                    file_name="test_data.csv",
+                    mime="text/csv",
+                    help="Download the sample test dataset to evaluate models"
+                )
+            else:
+                st.warning("Sample test data not available")
             
             st.markdown("---")
             st.markdown("### 📝 Quick Info")
